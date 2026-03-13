@@ -16,25 +16,12 @@ const tabs = [
   { label: "招商合作專區", path: "/invitation" },
   { label: "聯絡我們", path: "/contact" },
 ];
-// const { loggedIn } = useUserSession();
-
-// const logout = async () => {
-//   try {
-//     const { csrfToken } = await $fetch<{ csrfToken: string }>(
-//       "/api/csrf-token"
-//     );
-//     await $fetch("/api/_auth/session", {
-//       method: "DELETE",
-//       headers: {
-//         "x-csrf-token": csrfToken,
-//       },
-//     });
 
 
 const navigation = [
   {
     name: "Facebook",
-    href: "#",
+    href: "https://www.facebook.com/groups/482405965525467/",
     icon: {
       render() {
         return h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
@@ -75,20 +62,6 @@ const footer_nav = {
   ],
 };
 </script>
-
-<!-- <template>
-  <div>
-    <div class="nav">
-      <NuxtLink href="/">Home</NuxtLink>
-      <NuxtLink v-if="loggedIn" href="/dashboard">Dashboard</NuxtLink>
-      <a v-if="loggedIn" class="cursor-pointer" @click.prevent="logout"
-        >Logout</a
-      >
-      <NuxtLink v-else href="/login">Login</NuxtLink>
-    </div>
-    <slot />
-  </div>
-</template> -->
 
 <template>
   <div>
@@ -164,15 +137,15 @@ const footer_nav = {
     </div>
 
     <footer class="bg-white">
-      <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
+      <div class="mx-auto max-w-7xl px-6  sm:py-2 lg:px-8 lg:py-2">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
           <!-- Logo 與文字 -->
-          <div class="flex flex-col items-start space-y-2">
+          <!-- <div class="flex flex-col items-start space-y-2">
             <img class="h-40" src="/logo.png" alt="新北市華廈物業協會" />
             <p class="text-xl text-gray-900">新北市華廈物業協會</p>
-          </div>
+          </div> -->
 
-          <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          <!-- <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div class="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 class="text-sm/6 font-semibold text-gray-900">Solutions</h3>
@@ -225,20 +198,21 @@ const footer_nav = {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div
         class="mx-auto border-t border-gray-900/10 max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8"
       >
         <div class="flex justify-center gap-x-6 md:order-2">
+
           <a
             v-for="item in navigation"
             :key="item.name"
             :href="item.href"
             class="text-gray-600 hover:text-gray-800"
           >
-            <span class="sr-only">{{ item.name }}</span>
+            <!-- <span class="sr-only">{{ item.name }}</span> -->
             <component :is="item.icon" class="size-6" aria-hidden="true" />
           </a>
         </div>

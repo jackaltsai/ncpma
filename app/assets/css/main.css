@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  /* 定義襯線體（標題用） */
+  --font-serif: "Noto Serif TC", serif;
+  /* 定義無襯線體（內文用） */
   --font-sans: "Noto Sans TC", sans-serif;
 
   --color-green-50: #effdf5;
@@ -41,4 +44,9 @@
 body {
   @apply bg-white text-black;
   font-family: var(--font-sans);
+}
+
+h1, h2, .brand-title {
+  font-family: var(--font-serif);
+  font-weight: 200; /* 對應 ExtraLight */
 }
