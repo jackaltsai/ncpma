@@ -20,5 +20,6 @@ import "vueperslides/dist/vueperslides.css";
 
 const slides = [
   "/images/1.png",
+  "/images/2.png",
 ];
 </script>
