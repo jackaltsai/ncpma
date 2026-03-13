@@ -86,9 +86,9 @@ const footer_nav = {
               <img
                 class="h-16 w-auto"
                 src="/logo.png"
-                alt="新北市華廈物業協會"
+                alt="新北市華廈物業管理協會"
               />
-              <div class="ml-2 text-xl">新北市華廈物業協會</div>
+              <div class="ml-2 text-xl">新北市華廈物業管理協會</div>
             </div>
             <div class="ml-auto hidden sm:flex sm:space-x-6">
               <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
@@ -141,7 +141,7 @@ const footer_nav = {
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
           <!-- Logo 與文字 -->
           <!-- <div class="flex flex-col items-start space-y-2">
-            <img class="h-40" src="/logo.png" alt="新北市華廈物業協會" />
+            <img class="h-40" src="/logo.png" alt="新北市華廈物業管理協會" />
             <p class="text-xl text-gray-900">新北市華廈物業協會</p>
           </div> -->
 
